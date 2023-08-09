@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWidget from './CartWidget/CartWidget';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import CartWidget from '../CartWidget/CartWidget';
+import 'bootstrap/js/dist/dropdown';
 
 const NavBar = () => {
 
@@ -10,12 +10,12 @@ const NavBar = () => {
                 <a className="navbar-brand float-left" href="/">
                     Libreria El arte de Leer
                 </a>
-                <ul className="nav navbar-nav flex-row float-right dropdown">
+                <ul className="navbar-nav">
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="/" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Libros
                         </a>
-                        <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="categoriesDropdown">
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a className="dropdown-item" href="/">Libros infantiles</a></li>
                             <li><a className="dropdown-item" href="/">Libros novelas</a></li>
                             <li><a className="dropdown-item" href="/">Libros ficcion</a></li>
