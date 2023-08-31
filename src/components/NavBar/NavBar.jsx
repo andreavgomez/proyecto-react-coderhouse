@@ -1,3 +1,4 @@
+import './NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from '../CartWidget/CartWidget';
 import 'bootstrap/js/dist/dropdown';

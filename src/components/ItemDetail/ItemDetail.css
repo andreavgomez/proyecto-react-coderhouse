@@ -1,0 +1,54 @@
+.CardItem {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 400px;
+    margin: 2rem auto;    
+    margin-top: 6rem;
+  }
+
+  .ItemHeader {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ItemImg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .Info {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Counter {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .Controls {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .Button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Number {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+  }
+  

@@ -1,4 +1,4 @@
-// import './Item.css'
+import './Item.css'
 import { Link } from 'react-router-dom';
 
 const Item = ({ autor, titulo, precio, imagen, category, stock, id }) => {
@@ -10,7 +10,8 @@ const Item = ({ autor, titulo, precio, imagen, category, stock, id }) => {
                 </h2>
             </header>
             <picture>
-                <img src={imagen} alt={titulo} className="ItemImg" />
+                {/* <img src={imagen} alt={titulo} className="ItemImg" /> */}
+                <img src={require(`../../assets/${imagen}`).default} alt={titulo} className="ItemImg" />
             </picture>
             <section>
                 <p className="Info">
@@ -23,9 +24,10 @@ const Item = ({ autor, titulo, precio, imagen, category, stock, id }) => {
             <footer className="ItemFooter">
                 {/* <button className="option">Ver detalle</button> */}
                 {/* <link to={'/item/${id}'} className='Option'>Ver detalle</link> */}
-                <Link to={`/item/${id}`} className="Option">
+                <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
+                {/* <Link to={`/item/${id}`} className="Option">
                     Ver detalle
-                </Link>
+                </Link> */}
             </footer>
         </article>
     )
