@@ -10,8 +10,7 @@ const Item = ({ autor, titulo, precio, imagen, category, stock, id }) => {
                 </h2>
             </header>
             <picture>
-                {/* <img src={imagen} alt={titulo} className="ItemImg" /> */}
-                <img src={require(`../../assets/${imagen}`).default} alt={titulo} className="ItemImg" />
+                <img src={imagen} alt={titulo} className="ItemImg" />
             </picture>
             <section>
                 <p className="Info">
