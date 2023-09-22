@@ -1,0 +1,81 @@
+/* cart.css */
+
+/* Agrego un margen superior al contenedor del carrito */
+.Cart {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los elementos individuales del carrito */
+  .CartItem {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.2s;
+  }
+  
+  .CartItem:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Estilos para el título "No hay items en el carrito" */
+  .NoItems {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Estilos para el enlace "Productos" */
+  .ProductLink {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Estilos para el total y el botón de vaciar carrito */
+  .Total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .Button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .Button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el enlace de checkout */
+  .CheckoutLink {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .CheckoutLink:hover {
+    background-color: #0056b3;
+  }
+  

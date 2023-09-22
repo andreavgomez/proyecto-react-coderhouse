@@ -1,3 +1,4 @@
+import './ItemCount.css'
 import { useState } from 'react'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
@@ -23,7 +24,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 <button className="Button" onClick={increment}>+</button>
             </div>
             <div>
-                <button clasName="Button" onclick={() => onAdd(quantity)} disabled={!stock}>
+                <button className="Button AddToCartButton" onClick={() => onAdd(quantity)} disabled={!stock}>
                     Agregar al carrito
                 </button>
             </div>
