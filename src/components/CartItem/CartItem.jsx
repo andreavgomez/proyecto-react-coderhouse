@@ -1,7 +1,7 @@
 import React from 'react';
-import './CartItem.css'; 
+import './CartItem.css';
 
-const CartItem = ({ id, titulo, precio, cantidad }) => {
+const CartItem = ({ id, titulo, precio, cantidad, onRemove }) => {
   const subtotal = precio * cantidad;
 
   return (
@@ -13,7 +13,7 @@ const CartItem = ({ id, titulo, precio, cantidad }) => {
         <p className="CartItem-subtotal">Subtotal: ${subtotal}</p>
       </div>
       <div className="CartItem-delete">
-        <button className="btn btn-danger">Eliminar</button>
+        <button className="btn btn-danger" onClick={() => onRemove(id)}>Eliminar</button>
       </div>
     </div>
   );
