@@ -1,0 +1,44 @@
+.CartItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px; /* Margen superior agregado */
+}
+
+.CartItem-info {
+  flex-grow: 1;
+}
+
+.CartItem-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.CartItem-quantity,
+.CartItem-price,
+.CartItem-subtotal {
+  font-size: 16px;
+}  
+
+.CartItem-delete {
+  margin-left: 16px; /* Espacio entre el contenido y el botón */
+}
+
+.btn-danger {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #ff3c20;
+}
