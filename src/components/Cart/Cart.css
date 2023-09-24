@@ -1,7 +1,7 @@
 /* Aumenta el espacio entre el margen superior y la navbar */
 .Cart {
-  margin-top: 80px; 
-  text-align: center; 
+  margin-top: 80px;
+  text-align: center;
 }
 
 /* Estilos para los elementos individuales del carrito */
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px; /* Margen superior agregado */
+  margin-top: 16px;
 }
 
 /* Alinea los elementos del carrito en una sola línea horizontal */
@@ -27,19 +27,16 @@
   align-items: center;
 }
 
-/* Añade espacio entre los elementos de información del producto */
 .CartItem-info p {
-  margin-right: 20px; /* Ajusta el valor según tus preferencias */
+  margin-right: 20px;
 }
 
-/* Estilos para el título "No hay items en el carrito" */
 .NoItems {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 2rem;
 }
 
-/* Estilos para el enlace "Productos" */
 .ProductLink {
   display: block;
   text-align: center;
@@ -49,7 +46,6 @@
   color: #007bff;
 }
 
-/* Estilos para el total y el botón de  */
 .Total {
   display: flex;
   justify-content: space-between;
@@ -66,14 +62,13 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
-  margin-top: 1rem; /* Espacio entre el botón y el total */
+  margin-top: 1rem;
 }
 
 .Button:hover {
   background-color: #0056b3;
 }
 
-/* Estilos para el enlace de checkout */
 .CheckoutLink {
   display: block;
   text-align: center;

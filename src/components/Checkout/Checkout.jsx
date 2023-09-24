@@ -1,20 +1,29 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebase/client';
-import {getDoc,doc,Timestamp,collection,addDoc,writeBatch,query,
-        where,getDocs,documentId} from 'firebase/firestore';
+import { Timestamp, collection, addDoc, writeBatch, query, where, getDocs, documentId } from 'firebase/firestore';
 import { CartContext } from '../../context/CartContext';
-import CheckoutForm from '../CheckoutForm/CheckoutForm'; 
+import CheckoutForm from '../CheckoutForm/CheckoutForm';
 
 const Checkout = () => {
-  const { cart, clearCart, total } = useContext(CartContext);
+  const { cart, clearCart } = useContext(CartContext);
   const { orderId } = useParams();
   const [loading, setLoading] = useState(false);
+
+  const calculateTotal = () => {
+    let total = 0;
+    cart.forEach(item => {
+      total += item.precio * item.quantity;
+    });
+    return total;
+  };
 
   const createOrder = async (userData) => {
     setLoading(true);
 
     try {
+      const total = calculateTotal();
+
       const batch = writeBatch(db);
       const outOfStock = [];
       const ids = cart.map((prod) => prod.id);

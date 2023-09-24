@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 // import { getProductById } from '../../asyncMock'
-// import { getItemById } from '../../asyncMock'; 
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { db } from "../../firebase/client";
@@ -29,7 +28,7 @@ const ItemDetailContainer = () => {
             .finally(() => {
                 setLoading(false)
             })
-        ////
+        //// Dejo esto para cuando se venza firebase
         // getProductById(itemId)
         //     .then(response => {
         //         setProduct(response)

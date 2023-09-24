@@ -1,38 +1,37 @@
 .Container {
-    margin-top: 40px; /* Espacio entre el navbar y el formulario */
-    text-align: center; /* Centra el formulario */
-  }
-  
-  .Form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .Label {
-    margin-bottom: 10px; /* Espacio entre las etiquetas y los campos de entrada */
-    display: block;
-  }
-  
-  .Input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px; /* Espacio entre campos de entrada */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .Button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px; /* Espacio entre el botón y los campos de entrada */
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .Button:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
-  }
-  
+  margin-top: 40px;
+  text-align: center;
+}
+
+.Form {
+  display: inline-block;
+  text-align: left;
+}
+
+.Label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.Input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Button:hover {
+  background-color: #0056b3;
+}

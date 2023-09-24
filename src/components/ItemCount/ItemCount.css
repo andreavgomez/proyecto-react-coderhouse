@@ -1,31 +1,29 @@
 .Counter {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra verticalmente los elementos dentro de .Counter */
-  }
-  
-  .Controls {
-    display: flex;
-    align-items: center; /* Centra verticalmente los botones "+" y "-" */
-    margin-bottom: 10px; /* Espacio entre los botones y el botón "Agregar al carrito" */
-  }
-  
-  .Button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .Number {
-    font-size: 1.2rem;
-    margin: 0 1rem;
-  }
-  
-  /* Estilos adicionales para el botón "Agregar al carrito" */
-  .AddToCartButton {
-    text-align: center; /* Centra el texto dentro del botón */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Number {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.AddToCartButton {
+  text-align: center;
+}

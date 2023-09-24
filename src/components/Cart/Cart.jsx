@@ -3,11 +3,10 @@ import React, { useContext } from "react";
 import { CartContext } from '../../context/CartContext';
 import CartItem from '../CartItem/CartItem';
 import { Link } from 'react-router-dom';
-import Checkout from '../Checkout/Checkout'; 
 
 
 const Cart = () => {
-    const { cart, clearCart, totalQuantity, total, removeItem } = useContext(CartContext);
+    const { cart, clearCart, totalQuantity, removeItem } = useContext(CartContext);
 
     const calculateTotal = () => {
         let total = 0;
@@ -40,8 +39,7 @@ const Cart = () => {
             ))}
             <div className="Total">
                 <button onClick={() => clearCart()} className="Button">Vaciar Carrito</button>
-                <Link to='/checkout' className='CheckoutLink'>Checkout</Link>
-                {/* <h3>Total: ${total}</h3> */}
+                <Link to='/checkout' className='CheckoutLink'>Checkout</Link>                
                 <h3>Total: ${calculateTotal()}</h3>
             </div>
         </div>
