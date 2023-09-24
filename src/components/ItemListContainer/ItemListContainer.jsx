@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 // import { getProducts, getProductsByCategory } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-
 import { db } from "../../firebase/client";
-// import { getDocs, collection, query, where, limit, getDoc, doc } from 'firebase/firestore';
 import { getDocs, collection, query, where } from 'firebase/firestore';
+
 
 
 const ItemListContainer = ({ greeting }) => {
