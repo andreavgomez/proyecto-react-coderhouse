@@ -9,6 +9,14 @@ import Checkout from '../Checkout/Checkout';
 const Cart = () => {
     const { cart, clearCart, totalQuantity, total, removeItem } = useContext(CartContext);
 
+    const calculateTotal = () => {
+        let total = 0;
+        cart.forEach(item => {
+            total += item.precio * item.quantity;
+        });
+        return total;
+    };
+
     if (totalQuantity === 0) {
         return (
             <div className="Cart">
@@ -32,8 +40,9 @@ const Cart = () => {
             ))}
             <div className="Total">
                 <button onClick={() => clearCart()} className="Button">Vaciar Carrito</button>
-                <Link to='/Checkout' className='CheckoutLink'>Checkout</Link>
-                <h3>Total: ${total}</h3>
+                <Link to='/checkout' className='CheckoutLink'>Checkout</Link>
+                {/* <h3>Total: ${total}</h3> */}
+                <h3>Total: ${calculateTotal()}</h3>
             </div>
         </div>
     );
